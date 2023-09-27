@@ -16,7 +16,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 0 10px;
-    border-bottom: 0.25px solid #dddddd;
+    border-bottom: 0.25px solid #9e9b9b;
     margin: auto;
 }
 
@@ -458,7 +458,7 @@ img {vertical-align: middle;}
     width: 40%;
     justify-content: space-around;
     margin: 0 auto;
-    border-bottom: 0.25px solid #dddddd;
+    border-bottom: 0.25px solid #9e9b9b;
   }
 
   .footer-bar{
