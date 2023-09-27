@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <style>
+    p{
+      margin-top: 3px;
+      padding: 3px 10px;
+      background-color: rgb(170, 30, 30);
+      border-radius: 10px;
+      transition: 0.2s;
+    }
+    
+    p:hover{
+      background-color: green;
+    }
+  </style>
+</head>
+
+<body style="background-image: url(/static/home\ body\ background.png);">
+  <header>
+    <div class="logo-brand"><a href="/" style="text-decoration: none; display: flex; align-items: center;">
+      <img src="/static/busycoderlogo.JPG" alt="logo" style="height: 50px; border-radius: 30px;">
+      <div class="brand">BusyCODER</div></a>
+    </div>
+  </header>
+  
+  <div class="welcome">
+    <h3 style="margin-bottom: 0px;">Hi, welcome to</h3>
+    <h1 style="margin: 0px; font-size: 55px;">BusyCODER</h1>
+  </div>
+
+  <div class="click_here">
+    <p><a style="text-decoration: none; color: white; padding: 5px 5px;" href="/home.html">START HERE</a></p>
+  </div>  
+
+  <div class="copyright"><footer style="border-bottom: 0;">&copy; 2023 Bryan G. Caracas</footer></div>
+
+  <script>
+    hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function(){
+      navBar = document.querySelector(".nav-bar");
+      navBar.classList.toggle("active");
+    }
+  </script>
+
+</body>
+
+</html>

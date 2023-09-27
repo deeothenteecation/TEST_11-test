@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo-brand"><a href="/" style="text-decoration: none; display: flex; align-items: center;">
+      <img src="/static/busycoderlogo.JPG" alt="logo" style="height: 50px; border-radius: 30px;">
+      <div class="brand">BusyCODER</div></a>
+    </div>
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+      <ul>
+        <li>
+          <a href="/home.html">Home</a>
+        </li>
+        <li>
+          <a href="/about.html">About</a>
+        </li>
+        <li>
+          <a href="" class="active">Projects</a>
+        </li>
+        <li>
+          <a href="/contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>  
+
+  <div class="heading-container">
+    <p style="font-size: xx-large; font-weight: 500; margin-bottom: 0px;">Projects</p>
+    <p style="margin-top: 0px; font-size: large;">Browse some of my accomplishments.</p>
+  </div>
+
+  <div class="projects-container">
+    <div class="responsive">
+      <div class="gallery">
+        <a style="text-decoration: none;" href="/projects_gcashcalc.html">
+          <img src="/static/gcash-2.jpeg" alt="Image" width="600" height="400">
+          <div class="desc">G-Cash Calculator</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a style="text-decoration: none;" href="/projects_gcashcalc_web.html">
+          <img src="/static/gcash-3.png" alt="Image" width="600" height="400">
+          <div class="desc">G-Cash Calculator (web app)</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a style="text-decoration: none;" href="">
+          <img src="/static/image.jpg" alt="Northern Lights" width="600" height="400">
+          <div class="desc">Add a description of the image here</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+      <a style="text-decoration: none;" href="">
+        <img src="/static/Untitled (1).png" alt="Mountains" width="600" height="400">
+        <div class="desc">Add a description of the image here</div>
+      </a>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div style="padding:6px;">
+    <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+    <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="footer-bar">
+      <ul>
+      <li>
+        <a href="home.html">Home</a>
+      </li>
+      <li>
+        <a href="/about.html">About</a>
+      </li>
+      <li>
+        <a href="/projects.html">Projects</a>
+      </li>
+      <li>
+        <a href="/contact.html">Contact</a>
+      </li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="copyright"><footer style="border-bottom: 0;">&copy; 2023 Bryan G. Caracas</footer></div>
+  
+  <script>
+    hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function(){
+      navBar = document.querySelector(".nav-bar");
+      navBar.classList.toggle("active");
+    }
+  </script>
+
+</body>
+
+</html>

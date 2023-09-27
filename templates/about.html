@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo-brand"><a href="/" style="text-decoration: none; display: flex; align-items: center;">
+      <img src="/static/busycoderlogo.JPG" alt="logo" style="height: 50px; border-radius: 30px;">
+      <div class="brand">BusyCODER</div></a>
+    </div>
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+      <ul>
+        <li>
+          <a href="/home.html">Home</a>
+        </li>
+        <li>
+          <a href="" class="active">About</a>
+        </li>
+        <li>
+          <a href="/projects.html">Projects</a>
+        </li>
+        <li>
+          <a href="/contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>  
+
+  <div class="heading-container">
+    <p style="font-size: xx-large; font-weight: 500; margin-bottom: 0px;">About</p>
+    <p style="margin-top: 0px; font-size: large;">Repositories of various codes, programs, and tutorials.</p>
+  </div>
+
+  <div class="about-container">
+    <div class="row">
+      <div class="left">
+        <img src="/static/about image.avif" alt="">
+      </div>
+      <div class="right">
+        <div class="content">
+          <p style="margin-top: 0px; margin-bottom: 0px; padding-bottom: 4px; font-size: x-large;">Web Design and Development</p>
+          <p style="font-weight: 300;">Repositories of various types of codes and programs</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="footer-bar">
+      <ul>
+      <li>
+        <a href="home.html">Home</a>
+      </li>
+      <li>
+        <a href="about.html">About</a>
+      </li>
+      <li>
+        <a href="projects.html">Projects</a>
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
+      </li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="copyright"><footer style="border-bottom: 0;">&copy; 2023 Bryan G. Caracas</footer></div>
+  
+  <script>
+    hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function(){
+      navBar = document.querySelector(".nav-bar");
+      navBar.classList.toggle("active");
+    }
+  </script>
+
+</body>
+
+</html>
