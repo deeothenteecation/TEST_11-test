@@ -26,6 +26,10 @@ def projects_details_gcashcalc():
 def projects_details_gcashcalc_web():
     return render_template('projects_details_gcashcalc_web.html')
 
+@app.route("/projects_details_lossbudgetcalc.html")
+def projects_details_lossbudgetcalc():
+    return render_template('projects_details_lossbudgetcalc.html')
+
 @app.route("/contact.html")
 def contact():
     return render_template('contact.html')
@@ -33,6 +37,6 @@ def contact():
 @app.route("/thanks.html")
 def thanks():
     return render_template('thanks.html')
-    
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
