@@ -10,21 +10,21 @@ def index():
 def home():
     return render_template('home.html')
 
-@app.route("/about.html")
-def about():
-    return render_template('about.html')
+# @app.route("/about.html")
+# def about():
+#     return render_template('about.html')
 
 @app.route("/projects.html")
 def projects():
     return render_template('projects.html')
 
-@app.route("/projects_gcashcalc.html")
-def projects_gcashcalc():
-    return render_template('projects_gcashcalc.html')
+@app.route("/projects_details_gcashcalc.html")
+def projects_details_gcashcalc():
+    return render_template('projects_details_gcashcalc.html')
 
-@app.route("/projects_gcashcalc_web.html")
-def projects_gcashcalc_web():
-    return render_template('projects_gcashcalc_web.html')
+@app.route("/projects_details_gcashcalc_web.html")
+def projects_details_gcashcalc_web():
+    return render_template('projects_details_gcashcalc_web.html')
 
 @app.route("/contact.html")
 def contact():
