@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code B</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" type="image/x-icon" href="/static/ico.JPG">
+</head>
+
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+    <header>
+      <div class="logo-brand"><a href="/" style="text-decoration: none; display: flex;">
+        <div class="brand">code B</div></a>
+      </div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li>
+            <a href="/home.html">Home</a>
+          </li>
+          <!-- <li>
+            <a href="/about.html">About</a>
+          </li> -->
+          <li>
+            <a href="/projects.html">Projects</a>
+          </li>
+          <li>
+            <a href="/contact.html" class="active">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+  <div class="sub-header">
+    <h2>CONTACT ME</h2>
+    <p>Your comments and thoughts are highly appreciated.</p>
+  </div>
+
+  <!-- Contact Grid -->
+  <div class="contact-container">
+    <div class="c-row">
+      <div class="left">
+        <div class="form-container">
+          <form action="https://formsubmit.co/94405dc5b6d55f0cb32fa9825a2a9ed5" method="POST">
+            <label>Name</label>
+            <input type="text" name="From" placeholder="Enter your full name..">
+
+            <label>E-mail address:</label>
+            <input type="email" name="Email Address" placeholder="Your email address..">
+
+            <label>Message</label>
+            <textarea name="Message" placeholder="Write something.." style="height: 150px"></textarea>
+
+            <input type="hidden" name="_next" value="https://codeb.pythonanywhere.com/thanks.html">
+            <input type="hidden" name="_captcha" value="false">
+
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+      <div class="right">
+        <h2 style="font-weight: inherit;">Other contact details:</h2>
+        <!-- <h3 style="font-weight: inherit;">010-020-0340</h3> -->
+        <h3 style="font-weight: inherit;">
+          <a href=" mailto:bgcaracas66@gmail.com?subject=Inquiry&body=Name%20%3A%20%3Center%20your%20name%3E%0D%0AInquiry%20%3A%20%3Center%20your%20inquiry%2Fquestions%3E" style="text-decoration: none;">
+            <small style="color: rgb(77, 77, 77);">bgcaracas66@gmail.com</small>
+            <i style="color: rgb(77, 77, 77);">&#8599;</i>
+          </a>
+        </h3>
+        <ul class="social-links">
+          <li><a href="#"><img src="/static/icons8-facebook-48.png" alt=""></a></li>
+          <li><a href="#"><img src="/static/icons8-twitter-48.png" alt=""></a></li>
+          <li><a href="#"><img src="/static/icons8-instagram-48.png" alt=""></a></li>
+          <!-- <li><a href="#"><img src="/static/icons8-linkedin-48.png" alt=""></a></li> -->
+          <li><a href="#"><img src="/static/icons8-youtube-48.png" alt=""></a></li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- END MAIN -->
+
+
+  <footer>
+    <div class="footer-bar">
+      <ul>
+      <li>
+        <a href="home.html">Home</a>
+      </li>
+      <!-- <li>
+        <a href="/about.html">About</a>
+      </li> -->
+      <li>
+        <a href="/projects.html">Projects</a>
+      </li>
+      <li>
+        <a href="/contact.html">Contact</a>
+      </li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="copyright"><footer style="border-bottom: 0;">&copy; 2023 Bryan G. Caracas</footer></div>
+
+<script>
+  hamburger = document.querySelector(".hamburger");
+  hamburger.onclick = function(){
+    navBar = document.querySelector(".nav-bar");
+    navBar.classList.toggle("active");
+  }
+</script>
+
+</body>
+</html>

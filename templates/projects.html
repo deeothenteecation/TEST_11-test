@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code B</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" type="image/x-icon" href="/static/ico.JPG">
+</head>
+
+<body>
+
+<!-- MAIN (Center website) -->
+  <div class="main">
+
+    <header>
+      <div class="logo-brand"><a href="/" style="text-decoration: none; display: flex;">
+        <div class="brand">code B</div></a>
+      </div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li>
+            <a href="/home.html">Home</a>
+          </li>
+          <!-- <li>
+            <a href="/about.html">About</a>
+          </li> -->
+          <li>
+            <a href="/projects.html" class="active">Projects</a>
+          </li>
+          <li>
+            <a href="/contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+  <div class="sub-header">
+    <h2>PORTFOLIO</h2>
+    <p>Browse some of my projects.</p>
+  </div>
+
+  <!-- Portfolio Gallery Grid -->
+  <div class="row">
+    <div class="column">
+      <div class="content">
+        <a style="text-decoration: none; color: green;" href="/projects_details_gcashcalc.html">
+        <img src="/static/gcash-2.jpeg" alt="gcash-2" style="width:100%">
+        <h3 style="text-decoration: underline;">G-Cash Calculator</h3>
+        </a>
+        <p>Application that computes mobile wallet transactions.</p>
+        <p>Click image for details.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+        <a style="text-decoration: none; color: green;" href="/projects_details_gcashcalc_web.html">
+        <img src="/static/gcash-3.png" alt="gcash-3" style="width:100%">
+        <h3 style="text-decoration: underline;">G-Cash Calculator (Web Version)</h3>
+        </a>
+        <p>Application (web app) that computes mobile wallet transactions.</p>
+        <p>Click image for details.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+        <a style="text-decoration: none; color: green;" href="/projects_details_lossbudgetcalc.html">
+        <img src="/static/link loss budget.png" alt="link loss budget" style="width:100%">
+        <h3 style="text-decoration: underline;">FOC Loss Budget Calculator</h3>
+        </a>
+        <p>A tool for computing fiber optic cable plant loss budget.</p>
+        <p>Click image for details.</p>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="row">
+      <div class="column">
+        <div class="content">
+          <img src="/static/gcash-2.jpeg" alt="gcash-2" style="width:100%">
+          <h3>My Work</h3>
+          <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+        </div>
+      </div>
+  </div> -->
+  <!-- END MAIN -->
+  </div>
+
+  <footer>
+    <div class="footer-bar">
+      <ul>
+      <li>
+        <a href="home.html">Home</a>
+      </li>
+      <!-- <li>
+        <a href="/about.html">About</a>
+      </li> -->
+      <li>
+        <a href="/projects.html">Projects</a>
+      </li>
+      <li>
+        <a href="/contact.html">Contact</a>
+      </li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="copyright"><footer style="border-bottom: 0;">&copy; 2023 Bryan G. Caracas</footer></div>
+
+<script>
+  hamburger = document.querySelector(".hamburger");
+  hamburger.onclick = function(){
+    navBar = document.querySelector(".nav-bar");
+    navBar.classList.toggle("active");
+  }
+</script>
+
+</body>
+</html>
